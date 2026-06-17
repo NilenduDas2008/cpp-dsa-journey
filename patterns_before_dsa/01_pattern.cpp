@@ -4,18 +4,25 @@
 // ****
 // ****
 
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
-int main()
-{
-    for(int i = 0; i < 4; i++)
+void pattern1 (int n){
+
+    for(int i = 0; i < n; i++)
     {
-        for(int j = 0; j < 4; j++)
+        for(int j = 0; j < n; j++)
         {
-            cout<<"*";
+            cout<<"* ";
         }
         cout << endl;
     }
-    return 0;
+}
+
+int main()
+{
+    int n;
+    cin >> n;
+    pattern1(n);
+   
 }
