@@ -1,0 +1,30 @@
+//creating a pattern like this
+// 1
+// 1 2
+// 1 2 3
+// 1 2 3 4
+// 1 2 3 4 5
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void pattern3 (int n){
+
+    for(int i = 0; i < n; i++)
+    {
+        for(int j = 0; j < i; j++)
+        {
+            cout<<"* ";
+        }
+        cout << endl;
+    }
+}
+
+int main()
+{
+    int n;
+    cout << "whats n:";
+    cin >> n;
+    pattern3(n);
+   
+}
