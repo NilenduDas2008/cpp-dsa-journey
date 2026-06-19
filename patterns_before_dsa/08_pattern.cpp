@@ -1,15 +1,16 @@
 #include <iostream>
 using namespace std;
 
-void printPyramid(int N) {
+void printInvertedPyramid(int N) {
     for (int i = 0; i < N; i++) {
         // 1. Print leading spaces
-        for (int j = 0; j < N - i - 1; j++) {
+        for (int j = 0; j < i; j++) {
             cout << "-";
         }
         
         // 2. Print stars
-        for (int j = 0; j < 2 * i + 1; j++) {
+        // As i increases, the number of stars decreases
+        for (int j = 0; j < 2 * (N - i) - 1; j++) {
             cout << "*";
         }
         
@@ -20,6 +21,6 @@ void printPyramid(int N) {
 
 int main() {
     int N = 5;
-    printPyramid(N);
+    printInvertedPyramid(N);
     return 0;
 }
